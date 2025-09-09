@@ -18,7 +18,13 @@
 </head>
 <body>
 
- body {
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Subir e Descer Página</title>
+  <style>
+    body {
       height: 2000px; /* Cria uma página longa para rolar */
       padding: 20px;
     }
@@ -43,6 +49,28 @@
       color: white;
     }
   </style>
+</head>
+<body>
+
+  <button id="btnSubir" class="botao-scroll" onclick="subirPagina()">Subir</button>
+  <button id="btnDescer" class="botao-scroll" onclick="descerPagina()">Descer</button>
+
+  <script>
+    function subirPagina() {
+      window.scrollBy({
+        top: -300, // valor negativo sobe
+        behavior: 'smooth' // rolagem suave
+      });
+    }
+
+    function descerPagina() {
+      window.scrollBy({
+        top: 300, // valor positivo desce
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
 </body>
 </html>
 
