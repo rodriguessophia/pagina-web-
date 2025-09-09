@@ -18,21 +18,31 @@
 </head>
 <body>
 
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página com Botões de Subir e Descer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="content">
-        
-    <button class="scroll-btn" id="scrollUpBtn">Subir</button>
-    <button class="scroll-btn" id="scrollDownBtn">Descer</button>
+ body {
+      height: 2000px; /* Cria uma página longa para rolar */
+      padding: 20px;
+    }
 
-    <script src="script.js"></script>
+    .botao-scroll {
+      position: fixed;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      z-index: 1000;
+    }
+
+    #btnSubir {
+      bottom: 60px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #btnDescer {
+      bottom: 20px;
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
 </body>
 </html>
 
